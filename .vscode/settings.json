@@ -1,3 +1,9 @@
 {
-    "editor.defaultFormatter": "aeschli.vscode-css-formatter"
+    "editor.defaultFormatter": "aeschli.vscode-css-formatter",
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    }
 }

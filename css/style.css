@@ -19,7 +19,10 @@ h1, h2, h3, h4, h5, h6{
 }
 body {
     color: #2F3035;
-    font-family: sans-serif;
+    font-family: 'SFProDisplay-Regular', sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
 }
 
 .container{
@@ -40,4 +43,30 @@ body {
 }
 .menu__item + .menu__item{
     padding-left: 50px;
+}
+
+.header__box{
+    display: flex;
+}
+.header__address{
+    margin-right: 60px;
+    width: 265px;
+    padding-left: 30px;
+    position: relative;
+}
+.header__address::before{
+    content: '';
+    position: absolute;
+    background-image: url('../images/address-icon.svg'); 
+    width: 27px;
+    height: 30px;
+    left: 0;
+    top: -9px;
+}
+.user-list{
+margin-right: 15px;
+}
+.user-list__item{
+    display: inline-block;
+    padding-right: 10px;
 }

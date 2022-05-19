@@ -413,9 +413,11 @@ body {
 }
 .product-item__title{
     font-family: 'SF Pro Display';
+    font-weight: normal;
     font-size: 18px;
     line-height: 21px;
     color: #2F3035;
+    margin: 14px 0 25px;
 }
 .product-item__price{
     font-family: 'Barlow', sans-serif;
@@ -424,4 +426,35 @@ body {
     line-height: 36px;
     text-align: center;
     color: #2F3035;
+    margin-bottom: 31px;
+}
+.product-item__favorite{
+    position: absolute;
+    top: 16px;
+    right: 19px;
+    width: 24px;
+    height: 22px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 5;
+}
+.product-item__favorite::before{
+    content: '';
+    position: absolute;
+    width: 24px; 
+    height: 22px; 
+    background-image: url('../images/favorite-heart.svg');
+    top: 0;
+    left: 0;
+}
+.product-item__bascket{
+    position: absolute;
+    bottom:0;
+    right: 0;
+    background: #1C62CD;
+    border-radius: 10px 0px 0px 0px;
+    border: none;
+    padding: 10px 16px 8px 14px;
+    cursor: pointer;
 }

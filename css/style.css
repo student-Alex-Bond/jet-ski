@@ -403,13 +403,15 @@ body {
     content:  url('../images/arrow-right-grey.svg');
    padding-left: 2px;
 }
+.product-item__wrapper{
+    position: relative;
+    width: 271px;
+    }
 .product-item{
     border: 1px solid #CDCDCD;
     border-radius: 3px;
-    position: relative;
     text-align: center;
     padding: 52px 20px 32px;
-    width: 271px;
 }
 .product-item__title{
     font-family: 'SF Pro Display';
@@ -426,8 +428,8 @@ body {
     line-height: 36px;
     text-align: center;
     color: #2F3035;
-    margin-bottom: 31px;
 }
+
 .product-item__favorite{
     position: absolute;
     top: 16px;
@@ -439,6 +441,7 @@ body {
     cursor: pointer;
     z-index: 5;
 }
+
 .product-item__favorite::before{
     content: '';
     position: absolute;
@@ -455,6 +458,20 @@ body {
     background: #1C62CD;
     border-radius: 10px 0px 0px 0px;
     border: none;
-    padding: 10px 16px 8px 14px;
+    width: 60px;
+    height: 40px;
     cursor: pointer;
+}
+.product-item__bascket::before{
+    content: '';
+    position: absolute;
+    background-image: url('../images/basket-white.svg');
+    width: 30px;
+    height: 23px;
+    background-repeat: no-repeat; 
+    top: 10px;
+    left: 14px;
+}
+.product-item__favorite--active::before{
+    background-image: url('../images/favorite-heart-active.svg');
 }
